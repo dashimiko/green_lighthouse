@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Green Lighthouse</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+
+  <body class="page">
+    <div class="page__container">
+
+      <header class="header section">
+
+        <img class="header__logo" src="./images/logo.svg" alt="Логотип с изображением маяка">
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li>
+              <a href="#1" class="header__list-link">
+                О выставке
+              </a>
+            </li>
+            <li>
+              <a href="#2" class="header__list-link">
+                Организаторы
+              </a>
+            </li>
+            <li>
+              <a href="#3" class="header__no-margin header__list-link">
+                Помочь нам
+              </a>
+            </li>
+          </ul>
+
+          <div class="hamburger-menu">
+
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+
+            <ul class="menu__box">
+              <li>
+                <a class="menu__item" href="#1">
+                  О выставке
+                </a>
+              </li>
+              <li>
+                <a class="menu__item" href="#2">
+                  Организаторы
+                </a>
+              </li>
+              <li>
+                <a class="menu__item" href="#3">
+                  Помочь нам
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main class="content page__content">
+        <section id="1" class="first section"></section>
+        <section id="2" class="second section"></section>
+        <section id="3" class="third section"></section>
+        <section id="4" class="fourth section"></section>
+      </main>
+
+      <footer class="footer section page__footer">
+        <div class="footer"></div>
+      </footer>
+
+    </div>
+  </body>
+</html>

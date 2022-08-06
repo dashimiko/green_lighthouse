@@ -1,0 +1,32 @@
+.page{
+  font-family: 'NTHarmonica-bold','Open Sans', Arial, sans-serif;
+  background-color: inherit;
+  color: rgba(38, 50, 56, 1);
+  margin: 0;
+}
+
+.page__container{
+  min-width: 320px;
+  max-width: 1440px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page__content {
+  margin-top: 20px;
+  margin-bottom: 135px;
+}
+
+.section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}

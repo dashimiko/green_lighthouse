@@ -11,7 +11,7 @@
   <body class="page">
     <div class="page__container">
 
-      <header class="header section">
+      <!--<header class="header section">
 
         <img class="header__logo" src="./images/logo.svg" alt="Логотип с изображением маяка">
         <nav class="header__navigation">
@@ -59,13 +59,40 @@
             </ul>
           </div>
         </nav>
+      </header>-->
+
+      <header class="header section">
+
+        <img class="header__logo" src="./images/logo.svg" alt="Логотип с изображением маяка">
+        <nav class="header__navigation">
+          <ul class="header__navigation-list">
+            <li>
+              <a data-goto= ".first_link" href="#" class="header__list-link">
+                О выставке
+              </a>
+            </li>
+            <li>
+              <a data-goto= ".second_link" href="#" class="header__list-link">
+                Организаторы
+              </a>
+            </li>
+            <li>
+              <a data-goto= ".third_link" href="#" class="header__no-margin header__list-link">
+                Помочь нам
+              </a>
+            </li>
+          </ul>
+        </nav>
+          <div class="hamburger-menu">
+            <span></span>
+          </div>
       </header>
 
       <main class="content page__content">
-        <section id="1" class="first section"></section>
-        <section id="2" class="second section"></section>
-        <section id="3" class="third section"></section>
-        <section id="4" class="fourth section"></section>
+        <section id="1" class="first section first_link"></section>
+        <section id="2" class="second section second_link"></section>
+        <section id="3" class="third section third_link"></section>
+        <section id="4" class="fourth section fourth_link"></section>
       </main>
 
       <footer class="footer section page__footer">
@@ -73,5 +100,6 @@
       </footer>
 
     </div>
+    <script src="./components/header/menu.js"></script>
   </body>
 </html>

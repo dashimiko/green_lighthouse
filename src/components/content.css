@@ -8,6 +8,7 @@
   flex-shrink: 0;
   display: grid;
   grid-row-gap: 135px;
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 984px) {

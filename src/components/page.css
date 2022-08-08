@@ -1,3 +1,7 @@
+body.body_lock {
+  overflow: hidden;
+}
+
 .page{
   font-family: 'NTHarmonica-bold','Open Sans', Arial, sans-serif;
   background-color: inherit;
@@ -27,6 +31,3 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}

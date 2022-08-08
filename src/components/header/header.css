@@ -97,3 +97,101 @@
 .header__no-margin {
   margin-right: 0;
 }
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 665px ){
+  .hamburger-menu {
+    display: block;
+    z-index: 5;
+    position: relative;
+    width: 27px;
+    height: 22px;
+    cursor: pointer;
+    transition-duration: .25s;/**/
+    -webkit-tap-highlight-color: transparent;
+  }
+  .hamburger-menu span,
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    position:absolute;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #616161;
+    transition: all 0.3s ease 0s;
+    /*transition: all .6s;*/
+    /*transition-duration: .25s;/**/
+  }
+  .hamburger-menu::before,
+  .hamburger-menu::after {
+    content: ""
+  }
+  .hamburger-menu::before {
+    top: 0;
+  }
+  .hamburger-menu::after {
+    bottom: 0;
+  }
+  .hamburger-menu span {
+    top: 50%;
+    transform: scale(1) translate(0px,-50%)
+  }
+  .hamburger-menu.header__navigation_active span {
+    transform: scale(0) translate(0px,-50%)
+  }
+
+  .hamburger-menu.header__navigation_active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px,-50%);
+  }
+
+  .hamburger-menu.header__navigation_active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px,50%);
+  }
+
+  .header__navigation {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 210px;
+    margin: 0;
+    padding: 25px 0 0 0;
+    list-style: none;
+    background-color: #F7FFF8;
+    /*transition: right 0.3s ease 0s;*/
+    visibility: hidden;/**/
+    transition: all .6s;
+    overflow: auto;
+  }
+  .header__navigation_active {
+    right: 0;
+    visibility: visible;/**/
+  }
+  .header__navigation-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  .header__list-link {
+    display: block;
+    padding: 15px 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition-duration: .1s;
+    color: #263238;
+  }
+  .header__list-link > li:first-child {
+    padding-top: 0;
+  }
+}

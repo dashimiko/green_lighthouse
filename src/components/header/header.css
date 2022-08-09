@@ -7,7 +7,7 @@
   flex-shrink: 0;
   width: 100%;
   margin: 0 auto;
-  padding: 0 165px;
+  padding: 0 155px 0 165px;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,19 +16,19 @@
 
 @media screen and (max-width: 1100px) {
   .header {
-    padding: 0 80px;
+    padding: 0 70px 0 80px;
   }
 }
 
 @media screen and (max-width: 835px){
   .header {
-    padding: 0 40px;
+    padding: 0 30px 0 40px;
   }
 }
 
 @media screen and (max-width: 769px){
   .header {
-    padding: 0 15px;
+    padding: 0 5px 0 15px;
   }
 }
 
@@ -78,13 +78,13 @@
   color: #263238;
 
   text-decoration: none;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
   margin: 0 50px 0 0;
   padding: 10px;
+  transition: all .1s linear;
 }
 
 @media screen and (max-width: 835px){
@@ -107,11 +107,12 @@
     display: block;
     z-index: 5;
     position: relative;
-    width: 27px;
-    height: 22px;
+    width: 30px;
+    height: 25px;
     cursor: pointer;
     transition-duration: .25s;/**/
     -webkit-tap-highlight-color: transparent;
+    margin: 10px;
   }
   .hamburger-menu span,
   .hamburger-menu::before,

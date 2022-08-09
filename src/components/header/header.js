@@ -40,4 +40,20 @@ if (burgerMenu) {
   })
 }
 
+//добавление класса активному блоку меню при скролле
+/*window.addEventListener('scroll', () => {
+	let scrollDistance = window.scrollY;
 
+	if (window.innerWidth > 768) {
+		document.querySelectorAll('.section').forEach((el, i) => {
+			if (el.offsetTop - document.querySelector('.header__navigation').clientHeight <= scrollDistance) {
+				document.querySelectorAll('.header__navigation a').forEach((el) => {
+            if (el.classList.contains('header__list-link_active')) {
+              el.classList.remove('header__list-link_active');
+            }
+				});
+				document.querySelectorAll('.header__navigation li')[i].querySelector('a').classList.add('header__list-link_active');
+			}
+		});
+	}
+});*/

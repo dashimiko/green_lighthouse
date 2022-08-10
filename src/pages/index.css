@@ -4,9 +4,10 @@
 @import url(../components/page.css);
 @import url(../components/content.css);
 @import url(../components/header/header.css);
+@import url(../components/lead/lead.css);
 @import url(../components/footer.css);
 
-@import url(../components/first.css);
+
 @import url(../components/second.css);
 @import url(../components/third.css);
 @import url(../components/fourth.css);

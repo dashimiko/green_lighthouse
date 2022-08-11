@@ -23,6 +23,7 @@
 @media screen and (max-width: 978px){
   .header {
     padding: 0 30px 0 40px;
+    height: 60px;
   }
 }
 
@@ -48,6 +49,9 @@
   .header__logo {
     max-width: 37px;
     max-height: 40px;
+  }
+  .header {
+    height: 45px;
   }
 }
 

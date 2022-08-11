@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Green Lighthouse</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./src/pages/index.css" />
   </head>
 
@@ -17,7 +18,7 @@
         <nav class="header__navigation">
           <ul class="header__navigation-list">
             <li>
-              <a data-goto= ".first_link" href="#3" class="header__list-link">
+              <a data-goto= ".about_link" href="#3" class="header__list-link">
                 О выставке
               </a>
             </li>
@@ -57,7 +58,69 @@
         </section>
 
 
-        <section id="2" class="second section second_link"></section>
+        <section id="2" class="about section about_link">
+
+          <h2 class="about__title">О выставке «Полезный мусор»</h2>
+
+          <div class="swiper__container">
+
+              <div class="swiper__box swiper">
+
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <img class="slider__img" src="./src/images/exhibition-gee131ac26_1920.jpg" alt="картинка">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="slider__img" src="./src/images/windmills-g006567734_1920.jpg" alt="картинка">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="slider__img" src="./src/images/startup-g135ada4ed_1920.jpg" alt="картинка">
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper__button swiper-button-prev"></div>
+                <div class="swiper__button swiper-button-next"></div>
+            </div>
+
+              <ul class="about__list">
+                <li>
+                  <h3 class="about__heading">Время проведения</h3>
+                  <p class="about__text">с 1 сентября по 30 ноября 2022 года</p>
+                </li>
+                <li>
+                  <h3 class="about__heading">Место проведения</h3>
+                  <p class="about__text">ВГУЭС
+                    г. Владивосток, ул. Гоголя, д.41</p>
+                </li>
+                <li>
+                  <h3 class="about__heading">Вход</h3>
+                  <p class="about__text">Свободный</p>
+                </li>
+                <li>
+                  <h3 class="about__heading">Возрастные ограничения</h3>
+                  <p class="about__text">6+</p>
+                </li>
+              </ul>
+          </div>
+          <div class="about__paragraph-box">
+            <p class='about__paragraph'>
+              Если вы давно планировали начать сортировать бытовые отходы, но никак не могли понять,
+              с чего начать, то наша выставка для вас.
+            </p>
+            <p class='about__paragraph'>
+              Мы рассказываем всё про сортировку и переработку отходов во Владивостоке,
+              показываем, как выглядят и называются разные фракции перерабатываемого мусора, а также демонстрируем, во что превращаются предметы,
+              которые мы привыкли выкидывать в мусорные баки.
+            </p>
+            <p class='about__paragraph'>
+              Выставка продлится три месяца.
+            </p>
+          </div>
+
+        </section>
         <section id="3" class="third section third_link"></section>
         <section id="4" class="fourth section fourth_link"></section>
       </main>
@@ -67,6 +130,9 @@
       </footer>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/components/slider/slider.js"></script>
     <script src="./src/components/header/header.js"></script>
   </body>
 </html>

@@ -10,7 +10,6 @@
   font-family: 'NTHarmonica-bold';
   font-style:  normal;
   font-weight: 700;
-  src: url("./NTHarmonica-bold.woff2") format('woff2'),
-       url("./NTHarmonica-bold.woff") format("woff");
+  src: url("./NTHarmonica-bold.woff") format("woff");
 }
 

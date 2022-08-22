@@ -48,10 +48,10 @@
             <p class="lead__subtitle">Зелёный маяк рассказывает и показывает, как сортировать отходы</p>
             <div class="button__box">
               <div class="button__form button__type_yellow">
-                <a class="button" href="#4">Подробнее</a>
+                <a data-goto= ".organizers_link" class="button" href="#">Подробнее</a>
               </div>
               <div class="button__form button__type_white">
-                <a class="button" href="#3">Сделать пожертвование</a>
+                <a data-goto= ".organizers_link" class="button" href="#">Сделать пожертвование</a>
               </div>
             </div>
           </div>
@@ -59,6 +59,8 @@
 
 
         <section id="2" class="about section about_link">
+
+          <img class="about__picture" src="./src/images/bottles.png" alt="пластиковые бутылки и пакеты">
 
           <h2 class="about__title">О выставке «Полезный мусор»</h2>
 
@@ -119,10 +121,34 @@
               Выставка продлится три месяца.
             </p>
           </div>
-
         </section>
-        <section id="3" class="third section third_link"></section>
-        <section id="4" class="fourth section fourth_link"></section>
+
+        <section id="3" class="organizers section organizers_link">
+          <!--<img class="organizers__picture" alt='урок экологического просвещения' src='./src/images/orgss.png'>-->
+          <!--<div class='organizers__pic-box'></div>-->
+          <img class="organizers__picture" alt='урок экологического просвещения' src='./src/images/orgss.png'>
+          <div class="organizers__box">
+            <h2 class="organizers__title">Организаторы</h2>
+            <div class="organizers__paragraph-box">
+              <p class='organizers__paragraph'>
+                Выставка организована автономной некоммерческой организацией экологического просвещения и охраны окружающей среды “Зелёный маяк”.
+              </p>
+              <p class='about__paragraph'>
+                Мы занимаемся экологическим просвещением и помогаем сделать этот мир лучше.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="4" class="help section help_link">
+          <img class="help__picture" alt='девушка держит в руках зеленую планету' src='./src/images/help.png'>
+          <div class="help__box">
+            <h2 class="help__title">Сделайте пожертвование&nbspи помогите нашему проекту!</h2>
+            <div class="button__form button__type_yellow">
+              <a data-goto= ".organizers_link" class="button" href="#">Сделать пожертвование</a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer section page__footer">

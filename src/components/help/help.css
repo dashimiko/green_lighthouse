@@ -1,0 +1,34 @@
+.help {
+  background-color: rgba(235, 250, 255, 1);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 265px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.help__picture {
+  max-width: 310px;
+  max-height: 265px;
+  margin-top: 15px;
+}
+
+.help__box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  width: 431px;
+  height: 165px;
+  justify-content: space-between;
+}
+
+.help__title {
+  font-family: 'NTHarmonica-bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0;
+  text-align: center;
+}

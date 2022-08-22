@@ -10,6 +10,7 @@
   height: 400px;
   max-height: 400px;
   margin: 0 95px 0 0;
+  z-index: 4;
 }
 
 .swiper__container {

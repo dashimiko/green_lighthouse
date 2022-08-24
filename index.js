@@ -1,3 +1,31 @@
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1.2,
+  loop: true,
+  speed: 600,
+  spaceBetween: 5,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    978: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    769: {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+    },
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 15,
+    }
+  },
+});
 
 const menuLinks = document.querySelectorAll('.link[data-goto]');//пункты меню хедера
 const navButton = document.querySelectorAll('.button');//кнопки
@@ -46,21 +74,3 @@ if(navButton.length > 0)
 navButton.forEach(buttonLink => {
   buttonLink.addEventListener('click', onMenuLinkClick);
 });
-
-//добавление класса активному блоку меню при скролле
-/*window.addEventListener('scroll', () => {
-	let scrollDistance = window.scrollY;
-
-	if (window.innerWidth > 768) {
-		document.querySelectorAll('.section').forEach((el, i) => {
-			if (el.offsetTop - document.querySelector('.header__navigation').clientHeight <= scrollDistance) {
-				document.querySelectorAll('.header__navigation a').forEach((el) => {
-            if (el.classList.contains('header__list-link_active')) {
-              el.classList.remove('header__list-link_active');
-            }
-				});
-				document.querySelectorAll('.header__navigation li')[i].querySelector('a').classList.add('header__list-link_active');
-			}
-		});
-	}
-});*/

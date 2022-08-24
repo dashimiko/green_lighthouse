@@ -30,6 +30,7 @@
   display: flex;
   align-items: center;
   margin-left: 35px;
+  margin-top: 15px;
 }
 
 .footer__navigation-list {
@@ -47,10 +48,21 @@
   letter-spacing: 0.2px;
   color: #263238;
   text-decoration: none;
-  margin-right: 78px;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-right: 63px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
   display: block;
+}
+
+.footer__nav-link:hover {
+  background-color:rgba(249, 251, 246, 0.5);
+  border-radius: 30px;
+}
+
+.footer__nav-link:active {
+  background-color:rgba(247, 255, 248, 1);
+  border-radius: 30px;
 }
 
 .footer__social-box {

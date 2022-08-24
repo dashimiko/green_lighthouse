@@ -18,17 +18,17 @@
         <nav class="header__navigation">
           <ul class="header__navigation-list">
             <li>
-              <a data-goto= ".about_link" href="#3" class="header__list-link">
+              <a data-goto= ".about_link" href="#" class="link header__list-link">
                 О выставке
               </a>
             </li>
             <li>
-              <a data-goto= ".organizers_link" href="#" class="header__list-link">
+              <a data-goto= ".organizers_link" href="#" class="link header__list-link">
                 Организаторы
               </a>
             </li>
             <li>
-              <a data-goto= ".help_link" href="#" class="header__no-margin header__list-link">
+              <a data-goto= ".help_link" href="#" class="link header__no-margin header__list-link">
                 Помочь нам
               </a>
             </li>
@@ -152,7 +152,27 @@
       </main>
 
       <footer class="footer section page__footer">
-        <div class="footer"></div>
+        <img class="footer__logo header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
+        <nav class="footer__nav-box">
+          <ul class="footer__navigation-list">
+            <li><a data-goto= ".about_link" class="link footer__nav-link" href="#">О выставке</a></li>
+            <li><a data-goto= ".organizers_link" class="link footer__nav-link" href="#">Организаторы</a></li>
+          </ul>
+          <ul class="footer__navigation-list">
+            <li><a data-goto= ".help_link" class="link footer__nav-link" href="#">Помочь проекту</a></li>
+            <li><a class="footer__nav-link" href="#">Учредительные документы</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__social-box">
+          <p class="footer__social-heading">Наши соцсети:</p>
+          <div class="social-icon__box">
+            <a href="#"><img class="footer__social-icon" alt="инстаграм" src="./src/images/insta icon.svg"></a>
+            <a href="#"><img class="footer__social-icon" alt="вконтакте" src="./src/images/vk icon.svg"></a>
+          </div>
+        </nav>
+        <img src="./src/images/bag.png" class="footer__bag" alt="бутылка">
+        <img src="./src/images/bottle.png" class="footer__bottle" alt="пакет">
+        <p class="footer__year">2022</p>
       </footer>
 
     </div>

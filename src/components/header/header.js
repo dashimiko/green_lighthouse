@@ -1,5 +1,5 @@
 
-const menuLinks = document.querySelectorAll('.header__list-link[data-goto]');//пункты меню хедера
+const menuLinks = document.querySelectorAll('.link[data-goto]');//пункты меню хедера
 const navButton = document.querySelectorAll('.button');//кнопки
 const burgerMenu = document.querySelector(".hamburger-menu");//икнока бургера
 const burgerNavigation = document.querySelector(".header__navigation");//список пунктов меню хедера

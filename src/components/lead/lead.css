@@ -184,21 +184,21 @@
 
 @media screen and (min-width: 1024px) {
   .button__type_yellow:hover {
-    background: #FDFDFD;
-    border: 3px solid #FCE408;
+    box-shadow: 0px 4px 20px rgba(252, 228, 8, 0.4);
+    /*border: 3px solid #FCE408;*/
   }
 
   .button__type_yellow:active {
-    background: #FDFDFD;
-    border: 3px solid rgba(38, 50, 56, 0.7);
+    box-shadow: inset 0px 9px 5px #E8D107;
+    /*border: 3px solid rgba(38, 50, 56, 0.7);*/
   }
 
   .button__type_white:hover {
-    background: #FCE408;
+    box-shadow: 0px 4px 20px rgba(252, 228, 8, 0.4);
   }
 
   .button__type_white:active {
-    background: #FCE408;
-    box-shadow: inset 0px 9px 5px #E8D107;
+    box-shadow: none;
+    border: 3px solid rgba(38, 50, 56, 0.7)
   }
 }

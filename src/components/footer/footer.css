@@ -167,9 +167,14 @@
   }
   .footer__nav-box {
     margin-left: 0;
+    align-items: flex-start;
   }
   .footer__nav-link {
     padding-left: 0;
+    padding-right: 0;
     margin-right: 0;
+  }
+  .footer__margin {
+    margin-right: 90px;
   }
 }

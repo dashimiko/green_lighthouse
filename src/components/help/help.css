@@ -35,19 +35,19 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1350px){
+@media screen and (max-width: 1350px) {
   .help {
     padding: 0 165px;
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
   .help {
     padding: 0 80px;
   }
 }
 
-@media screen and (max-width: 978px){
+@media screen and (max-width: 978px) {
   .help__picture {
     max-width: 212px;
     max-height: 191px;
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
   .help {
     padding: 0 15px;
     height: auto;

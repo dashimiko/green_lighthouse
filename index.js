@@ -37,7 +37,7 @@ function onMenuLinkClick(e) {
   const menuLink = e.target;
   if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
-    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + scrollY - document.querySelector('header').offsetHeight;
 
     //закрытие меню после клика на пункт меню
     if (burgerMenu.classList.contains('header__navigation_active')) {

@@ -87,7 +87,7 @@
   }
 }
 
-@media screen and (max-width: 978px){
+@media screen and (max-width: 978px) {
   .about {
     padding: 0 0 0 40px;
   }
@@ -122,7 +122,7 @@
   }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
   .about {
     padding: 0 0 0 15px;
   }

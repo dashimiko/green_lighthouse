@@ -14,38 +14,65 @@
   z-index: 10;
 }
 
+.header__logo {
+  max-width: 60px;
+  max-height: 65px;
+}
+
+.header__no-margin {
+  margin-right: 0;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header__list-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+
+  text-decoration: none;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+  margin: 0 50px 0 0;
+  padding: 15px;
+  transition: all .1s linear;
+}
+
 @media screen and (max-width: 1100px) {
   .header {
     padding: 0 70px 0 80px;
   }
 }
 
-@media screen and (max-width: 978px){
+@media screen and (max-width: 978px) {
   .header {
     padding: 0 30px 0 40px;
     height: 60px;
   }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
   .header {
     padding: 0 5px 0 15px;
   }
 }
 
-.header__logo {
-  max-width: 60px;
-  max-height: 65px;
-}
-
-@media screen and (max-width: 835px){
+@media screen and (max-width: 835px) {
   .header__logo {
     max-width: 50px;
     max-height: 55px;
   }
 }
 
-@media screen and (max-width: 665px){
+@media screen and (max-width: 665px) {
   .header__logo {
     max-width: 37px;
     max-height: 40px;
@@ -72,41 +99,14 @@
   }
 }
 
-.header__list-link{
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #263238;
-
-  text-decoration: none;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
-  -ms-transition: .1s;
-  -o-transition: .1s;
-  margin: 0 50px 0 0;
-  padding: 15px;
-  transition: all .1s linear;
-}
-
-@media screen and (max-width: 835px){
+@media screen and (max-width: 835px) {
   .header__list-link {
     margin-right: 60px;
     font-size: 14px;
   }
 }
 
-.header__no-margin {
-  margin-right: 0;
-}
-
-.hamburger-menu {
-  display: none;
-}
-
-@media screen and (max-width: 665px ){
+@media screen and (max-width: 665px ) {
   .hamburger-menu {
     display: block;
     z-index: 5;
@@ -168,7 +168,6 @@
     padding: 25px 0 0 0;
     list-style: none;
     background-color: #F7FFF8;
-    /*transition: right 0.3s ease 0s;*/
     visibility: hidden;/**/
     transition: all .6s;
     overflow: auto;

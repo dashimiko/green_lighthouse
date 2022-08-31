@@ -64,7 +64,7 @@
   background-color: rgba(252, 228, 8, 1);
 }
 
-@media screen and (max-width: 978px){
+@media screen and (max-width: 978px) {
   .swiper__button {
     display: none;
   }
@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
   .swiper__box {
     width: calc(100vw - 15px);
   }

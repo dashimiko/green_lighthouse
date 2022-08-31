@@ -65,7 +65,7 @@
   }
 }
 
-@media screen and (max-width: 978px){
+@media screen and (max-width: 978px) {
   .organizers {
     padding: 0;
     display: block;
@@ -104,7 +104,7 @@
   }
 }
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 769px) {
   .organizers {
     padding: 0 15px 0 0;
     display: flex;

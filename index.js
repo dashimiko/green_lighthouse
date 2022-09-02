@@ -74,3 +74,6 @@ if(navButton.length > 0)
 navButton.forEach(buttonLink => {
   buttonLink.addEventListener('click', onMenuLinkClick);
 });
+
+//автообновление года
+document.getElementById ('myYear').innerText = new Date().getFullYear();

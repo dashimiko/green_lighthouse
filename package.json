@@ -1,0 +1,19 @@
+{
+  "name": "green_lighthouse",
+  "version": "1.0.0",
+  "description": "Лендинг для НКО \"Зеленый маяк\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashimiko/green_lighthouse.git"
+  },
+  "author": "da_miko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashimiko/green_lighthouse/issues"
+  },
+  "homepage": "https://github.com/dashimiko/green_lighthouse#readme"
+}

@@ -1,6 +1,5 @@
 .lead {
   background-color: white;
-  border-radius: 1% red;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px 0 165px;
@@ -66,11 +65,13 @@
 
 .button__type_yellow {
   background: #FCE408;
+  transition: all .1s linear;
 }
 
 .button__type_white {
   background: #FDFDFD;
   margin-left: 20px;
+  transition: all .1s linear;
 }
 
 .button__form {

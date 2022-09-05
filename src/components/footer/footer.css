@@ -55,6 +55,7 @@
   margin-bottom: 10px;
   padding: 15px;
   display: block;
+  transition: all .3s linear;
 }
 
 .footer__social-box {

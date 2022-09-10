@@ -1,12 +1,16 @@
 .footer {
   height: 210px;
-  background-color: #CDE8D3;
   display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 0 165px;
   position: relative;
   overflow: hidden;
+}
+
+.footer__section {
+  background-color: #CDE8D3;
+  width: 100%;
 }
 
 .footer__logo {

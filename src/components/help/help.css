@@ -1,12 +1,15 @@
-.help {
+.help__section {
   background-color: rgba(235, 250, 255, 1);
+  width: 100%;
+}
+
+.help {
   width: 100%;
   margin: 0 auto;
   padding: 0 265px;
   height: 300px;
   display: flex;
   justify-content: space-between;
-  max-width: 100vw;
   box-sizing: border-box;
 }
 

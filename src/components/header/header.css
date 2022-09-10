@@ -1,3 +1,10 @@
+.header__section {
+  background-color: #CDE8D3;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
 .header {
   height: 70px;
   background-color: #CDE8D3;
@@ -8,7 +15,6 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 155px 0 165px;
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
@@ -20,7 +26,22 @@
 }
 
 .header__no-margin {
-  margin-right: 0;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #263238;
+
+  text-decoration: none;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+  -ms-transition: .1s;
+  -o-transition: .1s;
+  margin: 0;
+  padding: 15px;
+  transition: all .3s linear;
 }
 
 .hamburger-menu {
@@ -88,11 +109,18 @@
     list-style-type: none;
     padding: 0;
   }
+  .header__no-margin:hover {
+    background-color:rgba(249, 251, 246, 0.5);
+    border-radius: 30px;
+  }
+  .header__no-margin:active {
+    background-color:rgba(247, 255, 248, 1);
+    border-radius: 30px;
+  }
   .header__list-link:hover {
     background-color:rgba(249, 251, 246, 0.5);
     border-radius: 30px;
   }
-
   .header__list-link:active {
     background-color:rgba(247, 255, 248, 1);
     border-radius: 30px;
@@ -102,6 +130,10 @@
 @media screen and (max-width: 835px) {
   .header__list-link {
     margin-right: 60px;
+    font-size: 14px;
+  }
+  .header__no-margin {
+    margin: 0;
     font-size: 14px;
   }
 }
@@ -181,6 +213,21 @@
     padding: 0;
   }
   .header__list-link {
+    display: block;
+    padding: 15px 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    width: 100px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition-duration: .1s;
+    color: #263238;
+  }
+  .header__no-margin {
     display: block;
     padding: 15px 15px;
     font-family: 'Open Sans';

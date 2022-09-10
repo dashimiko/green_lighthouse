@@ -30,6 +30,12 @@ body.body_lock {
   box-sizing: border-box;
 }
 
+.section__size {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media screen and (max-width: 984px) {
   .page__content {
     margin-bottom: 130px;

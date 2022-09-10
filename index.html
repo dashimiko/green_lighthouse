@@ -13,8 +13,9 @@
 
     <div class="page__container">
 
-      <header class="header section">
-        <img class="header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
+      <header class="header__section">
+        <div class="header section section__size">
+          <img class="header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
         <nav class="header__navigation">
           <ul class="header__navigation-list">
             <li>
@@ -28,7 +29,7 @@
               </a>
             </li>
             <li>
-              <a data-goto= ".help_link" href="#" class="link header__no-margin header__list-link">
+              <a data-goto= ".help_link" href="#" class="header__no-margin link">
                 Помочь нам
               </a>
             </li>
@@ -37,11 +38,13 @@
           <div class="hamburger-menu">
             <span></span>
           </div>
+        </div>
+
       </header>
 
       <main class="content page__content">
 
-        <section class="lead section lead_link">
+        <section class="lead section section__size lead_link">
           <img class="lead__picture" src="src/images/lead (1).png" alt="люди собирают мусор в контейнер на переработку">
           <div class="lead__box">
             <h1 class="lead__title">Выставка «Полезный мусор»</h1>
@@ -57,7 +60,7 @@
           </div>
         </section>
 
-        <section class="about section about_link">
+        <section class="about section section__size about_link">
           <img class="about__picture" src="./src/images/bottles.png" alt="пластиковые бутылки и пакеты">
           <h2 class="about__title">О выставке «Полезный мусор»</h2>
           <div class="swiper__container">
@@ -114,7 +117,7 @@
 
         </section>
 
-        <section class="organizers section organizers_link">
+        <section class="organizers section section__size organizers_link">
           <img class="organizers__picture" alt='урок экологического просвещения' src='./src/images/orgnizers_pic.png'>
           <div class="organizers__box">
             <h2 class="organizers__title">Организаторы</h2>
@@ -129,8 +132,9 @@
           </div>
         </section>
 
-        <section class="help section help_link">
-          <img class="help__picture" alt='девушка держит в руках зеленую планету' src='./src/images/help.png'>
+        <section class="help__section">
+          <div class="help section section__size help_link">
+            <img class="help__picture" alt='девушка держит в руках зеленую планету' src='./src/images/help.png'>
           <div class="help__box">
             <h2 class="help__title">Сделайте пожертвование и помогите нашему проекту!</h2>
             <div class="button__form button__type_yellow help__button-form">
@@ -138,7 +142,7 @@
             </div>
           </div>
         </section>
-        <section class="partners section">
+        <section class="partners section__size section">
           <h2 class="partners__title">Наши партнеры</h2>
           <ul class="partners__logo-zone">
             <li><img src="./src/images/раздельный сбор.svg" class="partners__logo" alt="логотип раздельного сбора."></li>
@@ -146,12 +150,14 @@
             <li><img src="./src/images/fesco.svg" class="partners__logo" alt="логотип феско."></li>
             <li><img src="./src/images/вгуэс.svg" class="partners__logo" alt="логотип владивостокского государственного университета."></li>
           </ul>
+          </div>
         </section>
 
       </main>
 
-      <footer class="footer section page__footer">
-        <img class="footer__logo header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
+      <footer class="footer__section">
+        <div class="footer section section__size">
+          <img class="footer__logo header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
         <nav class="footer__nav-box">
           <ul class="footer__navigation-list footer__margin">
             <li><a data-goto= ".about_link" class="link footer__nav-link" href="#">О выставке</a></li>
@@ -172,6 +178,7 @@
         <img src="./src/images/bag.png" class="footer__bag" alt="бутылка">
         <img src="./src/images/bottle.png" class="footer__bottle" alt="пакет">
         <p id="myYear" class="footer__year"></p>
+        </div>
       </footer>
 
     </div>

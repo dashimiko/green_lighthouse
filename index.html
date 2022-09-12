@@ -10,7 +10,6 @@
   </head>
 
   <body class="page">
-
     <div class="page__container">
 
       <header class="header__section">
@@ -45,7 +44,7 @@
       <main class="content page__content">
 
         <section class="lead section section__size lead_link">
-          <img class="lead__picture" src="src/images/lead (1).png" alt="люди собирают мусор в контейнер на переработку">
+          <img class="lead__picture" src="src/images/lead.png" alt="люди собирают мусор в контейнер на переработку">
           <div class="lead__box">
             <h1 class="lead__title">Выставка «Полезный мусор»</h1>
             <p class="lead__subtitle">Зелёный маяк рассказывает и показывает, как сортировать отходы</p>
@@ -135,22 +134,23 @@
         <section class="help__section">
           <div class="help section section__size help_link">
             <img class="help__picture" alt='девушка держит в руках зеленую планету' src='./src/images/help.png'>
-          <div class="help__box">
-            <h2 class="help__title">Сделайте пожертвование и помогите нашему проекту!</h2>
-            <div class="button__form button__type_yellow help__button-form">
-              <a class="button" href="#">Помочь проекту</a>
+            <div class="help__box">
+              <h2 class="help__title">Сделайте пожертвование и помогите нашему проекту!</h2>
+              <div class="button__form button__type_yellow help__button-form">
+                <a class="button" href="#">Помочь проекту</a>
+              </div>
             </div>
           </div>
         </section>
+
         <section class="partners section__size section">
           <h2 class="partners__title">Наши партнеры</h2>
           <ul class="partners__logo-zone">
-            <li><img src="./src/images/раздельный сбор.svg" class="partners__logo" alt="логотип раздельного сбора."></li>
+            <li><img src="./src/images/logo__sbor.svg" class="partners__logo" alt="логотип раздельного сбора."></li>
             <li><img src="./src/images/развитие.svg" class="partners__logo" alt="логотип АНО развитие."></li>
             <li><img src="./src/images/fesco.svg" class="partners__logo" alt="логотип феско."></li>
             <li><img src="./src/images/вгуэс.svg" class="partners__logo" alt="логотип владивостокского государственного университета."></li>
           </ul>
-          </div>
         </section>
 
       </main>
@@ -158,34 +158,31 @@
       <footer class="footer__section">
         <div class="footer section section__size">
           <img class="footer__logo header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
-        <nav class="footer__nav-box">
-          <ul class="footer__navigation-list footer__margin">
-            <li><a data-goto= ".about_link" class="link footer__nav-link" href="#">О выставке</a></li>
-            <li><a data-goto= ".organizers_link" class="link footer__nav-link" href="#">Организаторы</a></li>
-          </ul>
-          <ul class="footer__navigation-list">
-            <li><a data-goto= ".help_link" class="link footer__nav-link" href="#">Сделать пожертвование</a></li>
-            <li><a class="footer__nav-link" target="_blank" href="https://yadi.sk/i/ni3Low1DY1F4_g">Учредительные документы</a></li>
-          </ul>
-        </nav>
-        <nav class="footer__social-box">
-          <p class="footer__social-heading">Наши соцсети:</p>
-          <div class="social-icon__box">
-            <a target="_blank" href="https://t.me/zelenymayak "><img class="footer__social-icon" alt="телеграм" src="./src/images/telegram.svg"></a>
-            <a target="_blank" href="https://vk.com/rsbor_vl"><img class="footer__social-icon" alt="вконтакте" src="./src/images/vk icon.svg"></a>
-          </div>
-        </nav>
-        <img src="./src/images/bag.png" class="footer__bag" alt="бутылка">
-        <img src="./src/images/bottle.png" class="footer__bottle" alt="пакет">
-        <p id="myYear" class="footer__year"></p>
+          <nav class="footer__nav-box">
+            <ul class="footer__navigation-list footer__margin">
+              <li><a data-goto= ".about_link" class="link footer__nav-link" href="#">О выставке</a></li>
+              <li><a data-goto= ".organizers_link" class="link footer__nav-link" href="#">Организаторы</a></li>
+            </ul>
+            <ul class="footer__navigation-list">
+              <li><a data-goto= ".help_link" class="link footer__nav-link" href="#">Сделать пожертвование</a></li>
+              <li><a class="footer__nav-link" target="_blank" href="https://yadi.sk/i/ni3Low1DY1F4_g">Учредительные документы</a></li>
+            </ul>
+         </nav>
+         <nav class="footer__social-box">
+           <p class="footer__social-heading">Наши соцсети:</p>
+           <div class="social-icon__box">
+             <a target="_blank" href="https://t.me/zelenymayak "><img class="footer__social-icon" alt="телеграм" src="./src/images/telegram.svg"></a>
+             <a target="_blank" href="https://vk.com/rsbor_vl"><img class="footer__social-icon" alt="вконтакте" src="./src/images/vk_icon.svg"></a>
+           </div>
+         </nav>
+         <img src="./src/images/bag.png" class="footer__bag" alt="бутылка">
+         <img src="./src/images/bottle.png" class="footer__bottle" alt="пакет">
+         <p id="myYear" class="footer__year"></p>
         </div>
       </footer>
 
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
-
+    <script type="module" defer src="./index.js"></script>
   </body>
 
 </html>

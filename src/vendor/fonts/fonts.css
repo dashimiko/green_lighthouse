@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'Open Sans';
-  font-style:  normal;
-  font-weight: 300;
-  src: url("./open-sans-light.woff2") format("woff2"),
-       url("./open-sans-light.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 @font-face {
   font-family: 'NTHarmonica-bold';
@@ -12,4 +6,3 @@
   font-weight: 700;
   src: url("./NTHarmonica-bold.woff") format("woff");
 }
-

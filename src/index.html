@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Green Lighthouse</title>
-    <link rel="stylesheet" href="./src/pages/index.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </head>
 
   <body class="page">
@@ -13,7 +13,7 @@
 
       <header class="header__section">
         <div class="header section section__size">
-          <img class="header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
+          <img class="header__logo" src="<%= require('./images/logo.svg')%>" alt="Логотип с изображением маяка">
         <nav class="header__navigation">
           <ul class="header__navigation-list">
             <li>
@@ -43,7 +43,7 @@
       <main class="content page__content">
 
         <section class="lead section section__size lead_link">
-          <img class="lead__picture" src="src/images/lead.png" alt="люди собирают мусор в контейнер на переработку">
+          <img class="lead__picture" src="<%= require('./images/lead.png')%>" alt="люди собирают мусор в контейнер на переработку">
           <div class="lead__box">
             <h1 class="lead__title">Выставка «Полезный мусор»</h1>
             <p class="lead__subtitle">Зелёный маяк рассказывает и показывает, как сортировать отходы</p>
@@ -59,19 +59,19 @@
         </section>
 
         <section class="about section section__size about_link">
-          <img class="about__picture" src="./src/images/bottles.png" alt="пластиковые бутылки и пакеты">
+          <img class="about__picture" src="<%= require('./images/bottles.png')%>" alt="пластиковые бутылки и пакеты">
           <h2 class="about__title">О выставке «Полезный мусор»</h2>
           <div class="swiper__container">
               <div class="swiper__box swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img class="slider__img" src="./src/images/exhibition-gee131ac26_1920.jpg" alt="картинка">
+                    <img class="slider__img" src="<%= require('./images/exhibition-gee131ac26_1920.jpg')%>" alt="картинка">
                   </div>
                   <div class="swiper-slide">
-                    <img class="slider__img" src="./src/images/windmills-g006567734_1920.jpg" alt="картинка">
+                    <img class="slider__img" src="<%= require('./images/windmills-g006567734_1920.jpg')%>" alt="картинка">
                   </div>
                   <div class="swiper-slide">
-                    <img class="slider__img" src="./src/images/startup-g135ada4ed_1920.jpg" alt="картинка">
+                    <img class="slider__img" src="<%= require('./images/startup-g135ada4ed_1920.jpg')%>" alt="картинка">
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -116,7 +116,7 @@
         </section>
 
         <section class="organizers section section__size organizers_link">
-          <img class="organizers__picture" alt='урок экологического просвещения' src='./src/images/orgnizers_pic.png'>
+          <img class="organizers__picture" alt='урок экологического просвещения' src="<%= require('./images/orgnizers_pic.png')%>">
           <div class="organizers__box">
             <h2 class="organizers__title">Организаторы</h2>
             <div class="organizers__paragraph-box">
@@ -132,7 +132,7 @@
 
         <section class="help__section">
           <div class="help section section__size help_link">
-            <img class="help__picture" alt='девушка держит в руках зеленую планету' src='./src/images/help.png'>
+            <img class="help__picture" alt='девушка держит в руках зеленую планету' src="<%= require('./images/help.png')%>">
             <div class="help__box">
               <h2 class="help__title">Сделайте пожертвование и помогите нашему проекту!</h2>
               <div class="button__form button__type_yellow help__button-form">
@@ -145,10 +145,10 @@
         <section class="partners section__size section">
           <h2 class="partners__title">Наши партнеры</h2>
           <ul class="partners__logo-zone">
-            <li><img src="./src/images/logo__sbor.svg" class="partners__logo" alt="логотип раздельного сбора."></li>
-            <li><img src="./src/images/развитие.svg" class="partners__logo" alt="логотип АНО развитие."></li>
-            <li><img src="./src/images/fesco.svg" class="partners__logo" alt="логотип феско."></li>
-            <li><img src="./src/images/вгуэс.svg" class="partners__logo" alt="логотип владивостокского государственного университета."></li>
+            <li><img src="<%= require('./images/logo__sbor.svg')%>" class="partners__logo" alt="логотип раздельного сбора."></li>
+            <li><img src="<%= require('./images/развитие.svg')%>" class="partners__logo" alt="логотип АНО развитие."></li>
+            <li><img src="<%= require('./images/fesco.svg')%>" class="partners__logo" alt="логотип феско."></li>
+            <li><img src="<%= require('./images/вгуэс.svg')%>" class="partners__logo" alt="логотип владивостокского государственного университета."></li>
           </ul>
         </section>
 
@@ -156,7 +156,7 @@
 
       <footer class="footer__section">
         <div class="footer section section__size">
-          <img class="footer__logo header__logo" src="./src/images/logo.svg" alt="Логотип с изображением маяка">
+          <img class="footer__logo header__logo" src="<%= require('./images/logo.svg')%>" alt="Логотип с изображением маяка">
           <nav class="footer__nav-box">
             <ul class="footer__navigation-list footer__margin">
               <li><a data-goto= ".about_link" class="link footer__nav-link" href="#">О выставке</a></li>
@@ -170,19 +170,18 @@
          <nav class="footer__social-box">
            <p class="footer__social-heading">Наши соцсети:</p>
            <div class="social-icon__box">
-             <a target="_blank" href="https://t.me/zelenymayak "><img class="footer__social-icon" alt="телеграм" src="./src/images/telegram.svg"></a>
-             <a target="_blank" href="https://vk.com/rsbor_vl"><img class="footer__social-icon" alt="вконтакте" src="./src/images/vk_icon.svg"></a>
+             <a target="_blank" href="https://t.me/zelenymayak "><img class="footer__social-icon" alt="телеграм" src="<%= require('./images/telegram.svg')%>"></a>
+             <a target="_blank" href="https://vk.com/rsbor_vl"><img class="footer__social-icon" alt="вконтакте" src="<%= require('./images/vk_icon.svg')%>"></a>
            </div>
          </nav>
-         <img src="./src/images/bag.png" class="footer__bag" alt="бутылка">
-         <img src="./src/images/bottle.png" class="footer__bottle" alt="пакет">
+         <img src="<%= require('./images/bag.png')%>" class="footer__bag" alt="бутылка">
+         <img src="<%= require('./images/bottle.png')%>" class="footer__bottle" alt="пакет">
          <p id="myYear" class="footer__year"></p>
         </div>
       </footer>
 
     </div>
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script defer src="./index.js"></script>
+
   </body>
 
 </html>

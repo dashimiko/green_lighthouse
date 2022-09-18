@@ -1,3 +1,5 @@
+import "./pages/index.css";
+
 const swiper = new Swiper(".swiper", {
   slidesPerView: 1.2,
   loop: true,
@@ -44,15 +46,15 @@ function onMenuLinkClick(e) {
       document.body.classList.remove('body_lock');
       burgerMenu.classList.remove('header__navigation_active');
       burgerNavigation.classList.remove('header__navigation_active');
-    }
+    };
 
     window.scrollTo({
       top: gotoBlockValue,
       behavior: "smooth"
     });
       e.preventDefault();
-  }
-}
+  };
+};
 
 //открытие и закрытие модалки меню для мобильных разрешений
 if (burgerMenu) {
@@ -61,14 +63,14 @@ if (burgerMenu) {
     burgerMenu.classList.toggle('header__navigation_active');
     burgerNavigation.classList.toggle('header__navigation_active');
   })
-}
+};
 
 //слушатель для скролла по клике на меню в хедере
 if(menuLinks.length > 0) {
   menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', onMenuLinkClick);
   });
-}
+};
 //слушатель для скролла по клику на кнопки
 if(navButton.length > 0)
 navButton.forEach(buttonLink => {
@@ -77,3 +79,4 @@ navButton.forEach(buttonLink => {
 
 //автообновление года
 document.getElementById ('myYear').innerText = new Date().getFullYear();
+

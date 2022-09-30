@@ -51,6 +51,9 @@
 }
 
 @media screen and (max-width: 978px) {
+  .help {
+    padding: 0 60px;
+  }
   .help__picture {
     max-width: 212px;
     max-height: 191px;

@@ -1,0 +1,29 @@
+.content {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  flex-shrink: 0;
+  display: grid;
+  grid-row-gap: 135px;
+  margin-top: 90px;
+}
+
+@media screen and (max-width: 984px) {
+  .content {
+    grid-row-gap: 130px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .content {
+    grid-row-gap: 100px;
+  }
+}
+
+.content__section {
+  margin: 0 auto;
+  width: 100%;
+}

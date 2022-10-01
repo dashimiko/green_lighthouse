@@ -1,0 +1,49 @@
+body.body_lock {
+  overflow: hidden;
+}
+
+.page{
+  font-family: 'NTHarmonica-bold','Open Sans', Arial, sans-serif;
+  background-color: inherit;
+  color: rgba(38, 50, 56, 1);
+  margin: 0;
+}
+
+.page__container{
+  min-width: 320px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page__content {
+  margin-top: 20px;
+  margin-bottom: 135px;
+}
+
+.section {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.section__size {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 984px) {
+  .page__content {
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .page__content {
+    margin-bottom: 100px;
+  }
+}

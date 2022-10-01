@@ -1,0 +1,36 @@
+{
+  "name": "green_lighthouse",
+  "version": "1.0.0",
+  "description": "Лендинг для НКО \"Зеленый маяк\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashimiko/green_lighthouse.git"
+  },
+  "author": "da_miko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashimiko/green_lighthouse/issues"
+  },
+  "homepage": "https://github.com/dashimiko/green_lighthouse#readme",
+  "devDependencies": {
+    "autoprefixer": "10.4.11",
+    "clean-webpack-plugin": "4.0.0",
+    "css-loader": "6.7.1",
+    "cssnano": "5.1.13",
+    "gh-pages": "4.0.0",
+    "html-webpack-plugin": "5.5.0",
+    "mini-css-extract-plugin": "2.6.1",
+    "postcss": "8.4.16",
+    "postcss-loader": "7.0.1",
+    "style-loader": "3.3.1",
+    "webpack": "5.74.0",
+    "webpack-cli": "4.10.0"
+  }
+}
